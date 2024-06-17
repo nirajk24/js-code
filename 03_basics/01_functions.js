@@ -26,3 +26,20 @@ function calculateCartPrice(num1, num2, ...num3){
 }
 
 console.log(calculateCartPrice(100, 200, 300, 400));
+
+
+const addTwo = function(num) {
+    return num + 2
+}
+
+addTwo(2)
+
+// Arrow Function
+
+// const addThree = (num1, num2, num3) => {
+//     return num1 + num2 + num3
+// }
+
+const addThree = (num1, num2, num3) => num1 + num2 + num3
+
+console.log(addThree(1, 2, 3))
