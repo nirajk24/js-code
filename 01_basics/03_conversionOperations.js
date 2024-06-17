@@ -20,3 +20,23 @@ let someString = String(someNumber)
 
 console.log(someString)
 console.log(typeof(someString))
+
+
+// Operations
+
+let value = 3
+let negValue = -value
+console.log(negValue)
+
+// power = 2*3
+// divide = 2/3
+// mod = 2%3
+
+let str1 = "hello"
+let str2 = " world"
+
+let str = str1 + str2
+console.log(str)
+
+console.log("1" + 2 + 2) // 122
+console.log(1 + 2 + "2") // 32
