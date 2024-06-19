@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Something Different Now</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+
+<script>
+    const sayDate = function(str){
+        console.log(str, Date.now());
+    }
+
+    let some;
+
+    document.querySelector('#start')
+    .addEventListener('click', () => {
+        setInterval(sayDate, 1000, "Hi")
+    })
+
+    document.querySelector('#stop')
+    .addEventListener('click', () => {
+        clearInterval(some)
+    })
+</script>
+
+</html>
