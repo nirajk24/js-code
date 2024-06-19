@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121;">
+    <div class="main">
+        <div style="width: 100px; height: 100px; background-color: blue; margin: 10px;" class="box", id="blue">
+        </div>
+        <div style="width: 100px; height: 100px; background-color: green; margin: 10px;" class="box", id="green">
+        </div>
+        <div style="width: 100px; height: 100px; background-color: purple; margin: 10px;" class="box", id="purple">
+        </div>
+        <div style="width: 100px; height: 100px; background-color: pink; margin: 10px;" class="box", id="pink">
+        </div>
+        <div style="width: 100px; height: 100px; background-color: violet; margin: 10px;" class="box", id="violet">
+        </div>
+    </div>
+</body>
+
+<script>
+    document.getElementById('blue').addEventListener('click', (e) => {
+        console.log(e);
+        alert("Blue Clicked")
+    }, false)
+
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget
+    // clientX, cliendY, screenX, screenY
+    // altKey, ctrlKey, shiftKey, keyCode
+
+    // Event Propagation
+    // Event Bubbling (false) - Inner to Outer - First inner most element click is captured
+    // Event Capturing (true) - Outer to Inner
+
+    // e.stopPropagation() - stops bubbling
+    
+    document.querySelector('.main').addEventListener('click', (e) => {
+        let removeIt = e.target
+        removeIt.remove()
+    })
+
+</script>
+
+</html>
